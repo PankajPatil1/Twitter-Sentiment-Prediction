@@ -1,11 +1,16 @@
 # Twitter-Sentiment-Prediction
 
-This project is intended to get a basic understanding of sentiment prediction. As usual, the process is divided into 4 main parts :
+This project is intended to get a basic understanding of sentiment prediction. As usual, the process is divided into 3 main parts :
 <ol>
 <li> Fetching Data </li>
-<li> Pre processing </li>
+<li> EDA & Pre processing </li>
 <li> Modelling </li>
-<li> Hyperparameter Tuning </li>
+</ol>
+This project does not dwelve into the deployment part of the machine learning work as illustrated below. 
 
-This project does not dwelve into the deployment part of the machine learning work as illustrated below.
-!(https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F2160%2F1*f5F0TjZEhmY8YkyO15Rnhw.gif&imgrefurl=https%3A%2F%2Ftowardsdatascience.com%2Fchallenges-deploying-machine-learning-models-to-production-ded3f9009cb3&tbnid=G1B6LuXrw4tGHM&vet=12ahUKEwj08vvP1-3tAhVOEysKHRcxC10QMygBegUIARDIAQ..i&docid=_xRL6Ss25zR5_M&w=1080&h=608&q=machine%20learning%20workflow&ved=2ahUKEwj08vvP1-3tAhVOEysKHRcxC10QMygBegUIARDIAQ)
+<ol>
+  <li> Fetching Data: The training and test data is available in nice csv format. I just load them using pandas. </li>
+  <li> EDA & Pre processing: This code does some preliminary EDA. I have tagged my observations and comments in the notebook as I go through the process. For preprocessing, I have used Bag-of-words encoding, TF-IDF, OHE, Word2Vec and Doc2Vec preprocessing methods. Aim is to compare how each of them performs when given as an input to same algorithm while training
+    <li> Modelling: This part of the code is where I go through various pre processed inputs and check which performs best for my use case. Then I proceed to do some hyperparameter tuning to get better results from the same input. </li>
+
+
